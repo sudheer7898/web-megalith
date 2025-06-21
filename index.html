@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>To-Do List App</title>
+	<link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+	<div class="todobox">
+		<h2>To-Do List</h2>
+
+		<input type="text" id="taskInput" placeholder="Enter a new task" />
+		<select id="prioritySelect">
+			<option value="Low">Low</option>
+			<option value="Medium" selected>Medium</option>
+			<option value="High">High</option>
+		</select>
+		<button onclick="add()">Add Task</button>
+
+		<div class="filters">
+			<button onclick="filterbytype('all')">All</button>
+			<button onclick="filterbytype('completed')">Completed</button>
+			<button onclick="filterbytype('pending')">Pending</button>
+		</div>
+
+		<ul id="taskList"></ul>
+	</div>
+
+	<script src="script.js"></script>
+
+	
+</body>
+
+</html>
